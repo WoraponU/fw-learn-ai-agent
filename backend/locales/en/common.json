@@ -1,0 +1,11 @@
+{
+  "validation": {
+    "invalid": "Invalid data format",
+    "uuid": "Invalid UUID format",
+    "required": "Please enter data",
+    "min-length": "Please enter at least {{min}} characters",
+    "max-length": "Please enter no more than {{max}} characters",
+    "min-items": "Please enter at least {{min}} items",
+    "max-items": "Please enter no more than {{max}} items"
+  }
+}

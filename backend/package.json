@@ -1,0 +1,63 @@
+{
+  "name": "ai-agent-api-service",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build src/index.ts --compile --target bun --minify --outfile=dist/server",
+    "prepare": "husky",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cov": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@types/bun": "latest",
+    "@types/pg": "^8.15.4",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.1.0",
+    "prettier": "3.5.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.5.0",
+    "@langchain/anthropic": "^0.3.21",
+    "@langchain/aws": "^0.1.10",
+    "@langchain/community": "^0.3.44",
+    "@langchain/core": "^0.3.50",
+    "@langchain/google-genai": "^0.2.9",
+    "@langchain/google-vertexai": "^0.2.9",
+    "@langchain/groq": "^0.2.2",
+    "@langchain/langgraph": "^0.2.73",
+    "@langchain/langgraph-checkpoint-postgres": "^0.0.5",
+    "@langchain/mistralai": "^0.2.0",
+    "@langchain/openai": "^0.5.11",
+    "axios": "^1.9.0",
+    "bun": "^1.2.14",
+    "gql-query-builder": "^3.8.0",
+    "husky": "^9.1.7",
+    "i18next": "^25.2.0",
+    "i18next-fs-backend": "^2.6.0",
+    "ioredis": "^5.6.1",
+    "langchain": "^0.3.27",
+    "langsmith": "^0.3.29",
+    "meilisearch": "^0.50.0",
+    "pg": "^8.16.2",
+    "zod": "^3.25.20"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "resolutions": {
+    "@langchain/core": "0.3.50"
+  }
+}
