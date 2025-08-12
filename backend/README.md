@@ -35,8 +35,6 @@ DATABASE=your_database_connection_string
 3. Start the development server:
    ```bash
    make dev
-   # or
-   bun run dev
    ```
 
 ## Project Structure
